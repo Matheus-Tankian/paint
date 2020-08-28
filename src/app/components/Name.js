@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Name() {
+export default React.memo(() => {
   const [name, setName] = useState('')
   return (
     <label className="header-name">
@@ -12,4 +12,4 @@ export default function Name() {
       />
     </label>
   )
-}
+})
